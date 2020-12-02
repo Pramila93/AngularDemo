@@ -61,7 +61,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Employee:build"
+            "browserTarget": "Employee:build",
+            "port": 5050
           },
           "configurations": {
             "production": {
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "Employee"
+  "defaultProject": "Employee",
+  "cli": {
+    "analytics": "3ac593f1-ffca-4731-b872-e825e596432f"
+  }
 }

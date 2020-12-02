@@ -1,0 +1,11 @@
+<div>
+    <button type="button" name="btn" (click)="onShowBtn()">Show Employee</button>&nbsp;
+    <div>
+        <app-emp-tab [emp]="emp" [flag]="flag"></app-emp-tab>
+    </div>
+    
+    <div>
+        <app-emp-list [emp]="emp" [flag]="!flag"></app-emp-list>
+    </div>
+
+</div>

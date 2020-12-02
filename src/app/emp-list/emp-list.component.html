@@ -1,0 +1,9 @@
+<div *ngIf="flag">
+    <h2>Employee Details in List Format</h2>
+    <h4>Empno-->Ename-->Salary-->Design-->Bonus-->Total</h4>
+    <ul>
+        <li *ngFor="let e of emp">{{e.empno}}-->{{e.ename}}-->{{e.salary}}-->{{e.desg}}
+        -->{{e.bonus}}-->{{e.total}}
+        </li>
+    </ul>
+</div>

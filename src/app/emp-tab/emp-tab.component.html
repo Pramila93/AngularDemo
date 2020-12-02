@@ -1,0 +1,22 @@
+<div *ngIf="flag">
+    <h2>Employee Details In Tabular Format</h2>
+    <table border="1">
+        <tr>
+            <th>Emp No</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>Designation</th>
+            <th>Bonus</th>
+            <th>Total</th>
+        </tr>
+
+        <tr *ngFor="let e of emp">
+            <td>{{e.empno}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.desg}}</td>
+            <td>{{e.bonus}}</td>
+            <td>{{e.total}}</td>
+        </tr>
+    </table>
+</div>
